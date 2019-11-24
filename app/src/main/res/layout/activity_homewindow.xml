@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".Homewindow">
+
+    <RelativeLayout
+        android:id="@+id/homewindowhead"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null">
+
+        <TextView
+            android:id="@+id/homewindowhead1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELLNESS"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/homewindowbody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/homewindowhead">
+
+        <RelativeLayout
+            android:id="@+id/homewindowcontent1"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/loginselect"
+            android:layout_marginLeft="40dp">
+
+            <ImageView
+                android:id="@+id/homewindowcontent1pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/heartbeat1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homewindowcontent1pic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="LIFE LINE"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowcontent2"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/loginselect"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp">
+
+            <ImageView
+                android:id="@+id/homewindowcontent2pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pharmacy"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homewindowcontent2pic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="PHARMACY"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowcontent3"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/homewindowcontent1"
+            android:background="@drawable/loginselect"
+            android:layout_marginLeft="40dp">
+
+            <ImageView
+                android:id="@+id/homewindowcontent3pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/service"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homewindowcontent3pic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="SERVICES"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowcontent4"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/homewindowcontent2"
+            android:background="@drawable/loginselect"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp">
+
+            <ImageView
+                android:id="@+id/homewindowcontent4pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/log"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homewindowcontent4pic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="RECORDS"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowcontent5"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/homewindowcontent3"
+            android:background="@drawable/loginselect"
+            android:layout_marginLeft="40dp">
+
+            <ImageView
+                android:id="@+id/homewindowcontent5pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/fitness"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homewindowcontent5pic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="FITNESS"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowcontent6"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/homewindowcontent4"
+            android:background="@drawable/loginselect"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp">
+
+            <ImageView
+                android:id="@+id/homewindowcontent6pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/reminder"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homewindowcontent6pic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="REMINDERS"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lifeline">
+
+    <RelativeLayout
+        android:id="@+id/lifelinehead"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/background_gradient">
+
+        <TextView
+            android:id="@+id/lifelinehead1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIFE LINE"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lifelinesearch"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/lifelinehead"
+        android:layout_marginTop="20dp">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/lifelinesearchspinner"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dropdownhome1"/>
+
+        <ImageView
+            android:id="@+id/lifelinesearchbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lifelinecontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lifelinesearch"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_lifeline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/lifelinenullimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/message"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

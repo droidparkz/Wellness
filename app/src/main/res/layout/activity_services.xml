@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Services">
+
+    <RelativeLayout
+        android:id="@+id/serviceshead"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/background_gradient">
+
+        <TextView
+            android:id="@+id/serviceshead1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOOK AN APPOINTMENT"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/servicesbody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/serviceshead"
+        android:layout_marginTop="20dp">
+
+
+        <RelativeLayout
+            android:id="@+id/servicesbody2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:id="@+id/servicesnamepic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/name"/>
+
+            <EditText
+                android:id="@+id/servicesname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/servicesnamepic"
+                android:background="@drawable/inputbackground"
+                android:hint="Name of User"
+                android:inputType="textCapCharacters"
+                android:padding="10dp"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/servicesbody4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/servicesbody2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/servicescontactpic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/phone_1"/>
+
+            <EditText
+                android:id="@+id/servicescontact"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/servicescontactpic"
+                android:background="@drawable/inputbackground"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/servicesbody5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/servicesbody4"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/servicesidpic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/calendar"/>
+
+            <EditText
+                android:id="@+id/servicesdate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/servicesidpic"
+                android:background="@drawable/inputbackground"
+                android:hint="Enter Date (DD/MM/YYYY)"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/servicesbody6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/servicesbody5"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/servicesidpic1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/time"/>
+
+            <EditText
+                android:id="@+id/servicessession"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/inputbackground"
+                android:layout_toRightOf="@id/servicesidpic1"
+                android:layout_marginLeft="20dp"
+                android:hint="ENTER SESSION"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/servicesbutton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_below="@id/servicesbody6"
+            android:layout_marginTop="60dp"
+            android:text="REQUEST APPOINTMENT"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonbackground1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/background_gradient"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
