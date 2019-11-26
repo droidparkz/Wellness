@@ -141,7 +141,8 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    public void GetData(){
+    public void GetData()
+    {
 
         Getname = name;
         Getemail = email;
