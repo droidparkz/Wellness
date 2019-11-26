@@ -131,7 +131,7 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
 
         else if(blood == null || blood.equals("Select Blood Group"))
         {
-            Toast.makeText(Registration.this, "Select Priority", Toast.LENGTH_LONG).show();
+            Toast.makeText(Registration.this, "Select Blood Group", Toast.LENGTH_LONG).show();
         }
 
         else
